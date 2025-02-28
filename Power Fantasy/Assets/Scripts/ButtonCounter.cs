@@ -25,7 +25,7 @@ public class ButtonCounter : MonoBehaviour
 
             timer -= Time.deltaTime;
             if (timerText != null)
-                timerText.text = "Time Left: " + Mathf.Ceil(timer).ToString();
+                timerText.text = Mathf.Ceil(timer).ToString();
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -64,12 +64,12 @@ public class ButtonCounter : MonoBehaviour
 
             else if (pressCount == 75)
             {
-                messageText.text = "Super Strong!";
+                messageText.text = "Herculean!";
             }
 
             else if (pressCount == 100)
             {
-                messageText.text = "Overwhelming Power!";
+                messageText.text = "Godly!";
             }
         }
     }
